@@ -1,0 +1,181 @@
+/* layout */
+#gs_wrap {
+  width: 958px; /* 사용할 면적 */
+  margin: 0 auto; /* 가운데 정렬 */
+
+  display: flex; /* 가로폭 958px에 다 들어오되 */
+  flex-wrap: wrap; /* 박스의 사이즈는 유지 */
+  gap: 20px;
+  margin-top: 50px;
+}
+.memder {
+  width: 226px;
+}
+.youtube {
+  width: 226px;
+}
+.service {
+  width: 466px;
+}
+.point {
+  width: 226px;
+}
+.notice {
+  width: 712px;
+  height: 110px;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+}
+
+/* title */
+.title {
+  height: 44px;
+  /* 타이틀 박스 크기 잡기. 가로폭은 부모, 세로폭은 자식 */
+}
+.title h2 {
+  font-size: 22px;
+}
+.title h2 span {
+  color: #216fed;
+}
+
+/* memder */
+.memder_content {
+  height: 275px;
+  background: url(../img/sweet.jpg) no-repeat #f0f0f0;
+  text-align: center; /* 멤버의 텍스트는 모두 센터 되게 */
+  border: 1px solid #d6d6d6;
+}
+.memder_content h3 {
+  padding-top: 215px;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+.memder_content p {
+  font-size: 14px;
+  margin-top: 10px;
+  background: url(../img/won.jpg) no-repeat 35% 0 ;
+}
+
+/* youtube */
+.youtube_content {
+  height: 275px;
+  background: url(../img/youtube_icon.jpg) no-repeat 21px 34px #f0f0f0;
+}
+.youtube_content h3 {
+  margin-left: 72px;
+  padding-top: 32px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.youtube_content p {
+  width: 80%;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 auto; /* 마진 0 auto는 블록속성한테만 먹힘 */
+  margin-top: 20px;
+}
+.youtube_video {
+  margin-top: 5px;
+}
+.youtube_video iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/* service */
+.service_content {
+  height: 275px;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #f0f0f0; */
+  border: 1px solid #d6d6d6; /* 박스 겉 실선 */
+}
+.service_content > div {
+  width: 50%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 40px 0 40px 30px;
+}
+/* 아이콘 크기는 통일 */
+.icon {
+  width: 56px;
+  height: 50px;
+  margin-right: 10px; /* 아이콘 오른쪽에 마진 줘서 텍스트와 거리 벌리기 */
+  text-indent: -100000px;
+  /*  */
+}
+/* 아이콘 이미지는 다르게 */
+.chk {
+  background: url(../img/check.jpg) no-repeat;
+}
+.consult {
+  background: url(../img/consult.jpg) no-repeat;
+}
+.card {
+  background: url(../img/membership.jpg) no-repeat;
+}
+.recurt {
+  background: url(../img/recurt.jpg) no-repeat;
+}
+.desc strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+.desc span {
+  display: block;
+}
+
+/* service border */
+.service_cont01,
+.service_cont02 {
+  border-bottom: 1px solid #d6d6d6; /* 아래쪽에 실선 추가 */
+}
+
+.service_cont01,
+.service_cont03 {
+  border-right: 1px solid #d6d6d6; /* 가운데에 실선 추가 */
+}
+
+/* point */
+.point {
+  height: 110px; /* 높이를 지정해야 그만큼 박스가 생김 */
+  background: url(../img/gs_point.jpg) no-repeat 22px center #00a6a6;
+}
+.point h2 {
+  padding-top: 26px;
+  margin-left: 80px;
+  font-size: 22px;
+  color: #fff;
+}
+.point h2 span {
+  font-weight: 300;
+}
+.point p {
+  margin-left: 80px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.5;
+}
+
+/* notice */
+.notice ul {
+  width: 98%;
+  margin: 16px auto 0 auto;
+}
+.notice ul li {
+  display: flex;justify-content: space-between;
+  margin-bottom: 6px;
+}
+.notice ul li span.note {
+  font-size: 15px;
+  font-weight: 700;
+}
+.notice ul li span.more {
+  background: url(../img/plus.jpg) no-repeat right 3px;
+  padding-right: 22px;
+}
+.notice ul li span.date {
+
+}

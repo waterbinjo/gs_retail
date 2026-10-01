@@ -1,0 +1,116 @@
+#wrap {
+    display: block;
+    width: 100%;
+}
+.container {
+    width: 958px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.member_box {
+    display: inline-block;
+    width: 226px;
+}
+.youtube_box {
+    width: 226px;
+}
+.service_box {
+    width: 446px;
+}
+.point_box {
+    width: 226px;
+    background-color: green;
+}
+.notice_box {
+    width: 712px;
+    background-color: blue;
+}
+
+/* title */
+.title {
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+/* 회색영역 */
+.member_content,
+.youtube_content {
+    background-color: #f3f3f3;
+}
+
+/* member_box */
+.member_box .youtube_box {
+    width: 226px;
+}
+.title {
+    height: 44px;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+}
+.member_content {
+    width: 226px;
+    height: 275px;
+    background-color: #f1f1f1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.member_content img {
+    
+}
+.member_box > p {
+    text-align: center;
+}
+
+.youtube_content {
+    width: 226px;
+    height: 275px;
+    background-color: #f1f1f1;
+
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.youtube_content p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.youtube_content p:nth-child(2) {
+    font-size: 13px;
+    line-height: 1.5;
+}
+.youtube_box video {
+    width: 185px;
+    height: 122px;
+
+    position: relative;
+    margin-left: 20px;
+    margin-top: -145px;
+
+    display: block;
+}
+
+/* service_content */
+.service_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_content01,
+.service_content02,
+.service_content03,
+.service_content04 {
+    width: 50%;
+    height: 120px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
